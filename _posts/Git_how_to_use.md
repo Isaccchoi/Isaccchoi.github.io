@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Git How to use"
+date:   2017-09-11 16:49:19 +0900
+categories: jekyll update
+---
+
+# Git 사용법
+
+### git status
+
+현재 상태를 확인할 수 있음 해당 git의 파일들의 상태 확인 가능
+
+---
+
+### git add [file name or directory name]
+파일명 입력시 해당 파일의 상태를 변경하여 commit을 할 수 있는 상태로 변경 가능
+
+-A 옵션을 사용하면 all 즉 모든 파일 add 가능
+
+---
+
+### git commit -amend
+이전 커밋에 내용을 추가하는게 필요할경우 해당 내용을 추가한 후 amend 옵션을 사용하면 이전 커밋 내용을 지우고 해당 파일이 추가된 내용이 들어간다
+
+---
+### git checkout [file name]
+수정한 내용이 마음에 안될 경우 뺄 수 있으나 commit이 된 상태가 아니기때문에 다시 되돌릴 수는 없음
+**정말 중요한때만 사용!!!!!**
+
+---
+
+### git clone [remote-name]
+다른 곳에 commit 한 **전체** 내용을 내려 받음
+
+---
+
+### git fetch [remote-name]
+
+다른 곳에서 commit 한 내용의 변경사항을 내려 받음
+
+---
+
+### git checkout [branch-name]
+해당 명령어를 통해 브랜치를 옮길 수 있음
+
+---
+
+
+### git log (--oneline --graph --all)
+commit 로그를 볼 수 있음
+
+oneline - 로그를 간략하게 한줄로 표시(기록 보기에 용이)
+graph  - 로그를 그래프 형식으로 표시 해줌 (여러 branch를 이용해 작업시 기록을 보기 용이할것으로 보임)
+all - 현재 branch뿐만 아니라 모든 branch에 대한 기록도 확이 가능
+
+---
+
+### git branch
+현재 브랜치 상태를 볼 수 있으며 뒤에 이름을 적어 새 브랜치를 생성하는 것도 가능 하다
+
+### git branch -d [branch name]
+브랜치는 d 명령어를 사용하여 삭제도 가능하네
+
+### git branch --merged
+브랜치별로 머지된 상태를 확인할 수 있다.
+
+
+*이 붙어 있는 항목을 제외한 항목은 삭제해도 무방하다
+
+---

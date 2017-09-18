@@ -50,3 +50,9 @@ print("Good") if is_holiday else print("Bad")
 조건1이 참일 경우 if 조건1 else 조건1은 거짓이나 조건2가 참일 경우 if 조건2 else 조건1,2가 모두 거짓일 경우 
 ```
 
+
+# 순환문
+
+## for문(조건에 따른 순회)
+
+

@@ -17,6 +17,21 @@ RUN				apt-get update
 - RUN: 실행할 용어
 
 ```docker
-docker build -t base . -f Dockerfile.base .
+>>> docker build -t base . -f Dockerfile.base .
 ```
 Dockerfile.base파일을 이용하여 도커 이미지 생성 
+
+```
+>>> docker build -t eb -t Dockerfile
+```
+이게 기본 폼이나 해당위치에 Dockerfile이 있을 경우 생락 가능
+
+```
+>>> docker build -t eb .
+```
+
+```
+>>> docker run --rm -it eb /bin/zsh
+```
+이미지 생성 완료후 zsh을 이용해 생성된 이미지로 도커 실행 
+

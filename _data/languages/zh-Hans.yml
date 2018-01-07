@@ -7,81 +7,80 @@ title:
 author: 博主
 
 menu:
-  home: 首页
-  archives: 归档
-  categories: 分类
-  tags: 标签
-  about: 关于
-  search: 搜索
-  schedule: 日程表
-  sitemap: 站点地图
-  commonweal: 公益404
+  home: Home
+  archives: Archives
+  categories: Categories
+  tags: Tags
+  about: About
+  search: Search
+  schedule: Schedule
+  sitemap: Sitemap
+  commonweal: commonweal
 
 sidebar:
-  overview: 站点概览
-  toc: 文章目录
+  overview: Overview
+  toc: toc
 
 post:
-  created: 创建于
-  modified: 更新于
-  sticky: 置顶
-  posted: 发表于
-  in: 分类于
-  read_more: 阅读全文
-  untitled: 未命名
-  toc_empty: 此文章未包含目录
-  visitors: 阅读次数
-  wordcount: 字数统计
-  min2read: 阅读时长
+  created: Created
+  modified: Modified
+  sticky: Sticky
+  posted: Posted
+  in: in
+  read_more: read_more
+  untitled: Untitled
+  toc_empty: Toc_empty
+  visitors: Visitors
+  wordcount: WordCount
+  min2read: Min2Read
   copyright:
-    author: 本文作者
-    link: 本文链接
-    license_title: 版权声明
-    license_content: '本博客所有文章除特别声明外，均采用
-      <a href="%s" rel="external nofollow" target="_blank">%s</a> 许可协议。转载请注明出处！'
+    author: Author
+    link: Link
+    license_title: License_title
+    license_content: 'License Content'
 
 page:
-  totally: 共有
-  tags: 标签
+  totally: Totally
+  tags: Tags
 
 footer:
-  powered: "由 %s 强力驱动"
-  theme: 主题
+  powered: "%s"
+  theme: Theme
 
 counter:
   tag_cloud:
-    zero: 暂无标签
-    one: 目前共计 1 个标签
-    other: "目前共计 %d 个标签"
+    zero: zero
+    one: one
+    other: "%d"
 
   categories:
-    zero: 暂无分类
-    one: 目前共计 1 个分类
-    other: "目前共计 %d 个分类"
+    zero: zro
+    one: one
+    other: "%d"
 
   archive_posts:
-    zero: 暂无日志。
-    one: 目前共计 1 篇日志。
-    other: "目前共计 %d 篇日志。"
+    zero: zero
+    one: one
+    other: "%d"
 
 state:
-  posts: 日志
-  pages: 页面
-  tags: 标签
-  categories: 分类
+  posts: posts
+  pages: pages
+  tags: tags
+  categories: categories
 
 search:
-  placeholder: 搜索...
+  placeholder: Search..
 
 cheers:
-  um: 嗯..
+  um: um
   ok: OK
-  nice: 好
-  good: 很好
-  great: 非常好
-  excellent: 太棒了
+  nice: nice
+  good: good
+  great: great
+  excellent: excellent
 
-keep_on: 继续努力。
+keep_on: Keep on
 
 symbol:
   comma: '， '

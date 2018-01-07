@@ -1,31 +1,37 @@
-# Permalinks
-permalink:      /:year-:month-:day/:title
+##The website title
+name: Blog Name
+##Markdown processor
+markdown: kramdown
+##syntax highlighter. change it to pygments
+highlighter: pygments
 
-# Setup
-title:          Tale
-paginate:       5
-baseurl:        "/tale"
-url:            "https://isaccchoi.github.io"
-
-# Assets
+##define base_url for valid usage in sitemap.xml and robots.txt
+base_url: http://example.com
 sass:
-  sass_dir:     _sass
-  style:        :compressed
+  sass_dir: _sass
+  style: :compressed
+paginate: 5
+paginate_path: "page:num"
+##The website description (to be used in meta tags)
+description: Put website description for your home page. (about 50 words or more)
+##Some frequently used keywords on your website
+keywords: some, relevant, keywords, for, usage, in metatags
 
-# Build settings
-markdown:       kramdown
+##define this for disqus comment support
+#disqus: forumname
 
-# About
-author:
-  name:         Chester How
-  url:
-  email:        isaccchoi5@gmail.com
+##set this to enable google analytics
+#ga_id: analyticsID
+#ga_domain: analyticsDomain
 
-# Custom vars
-version:        3.4.1
-github:
-  repo:         https://github.com/isaccchoi
+##Some commonly used links
+links:
+  facebook: username
+  twitter: username
+  email: username@gmail.com
+  github: username
 
-# Gems
-plugins:
-  - jekyll-paginate
+##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
+about_image: placeholder.jpg
+##comment this if you want full width posts with no sidebar
+sidebar: on

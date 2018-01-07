@@ -1,27 +1,25 @@
-<div class="grid">
-	<div class="unit whole about">
-		<p>
-			{% if site.about_image %}
-				<img src="/img/{{ site.about_image }}" alt="Avatar">
-			{% elsif site.links.github %}
-				<img src="https://github.com/{{ site.links.github }}.png" alt="Avatar">
-			{% else %}
-				<img src="/img/placeholder.jpg" alt="Avatar">
-			{% endif %}
-		</p>
-		<ul class="links">
-			{% if site.links.github %}
-				<li><a href="https://github.com/{{ site.links.github }}" target="_blank">Github</a></li>
-			{% endif %}
-			{% if site.links.twitter %}
-				<li><a href="https://twitter.com/{{ site.links.twitter }}" target="_blank">Twitter</a></li>
-			{% endif %}
-			{% if site.links.facebook %}
-				<li><a href="https://www.facebook.com/{{ site.links.facebook }}" target="_blank">Facebook</a></li>
-			{% endif %}
-			{% if site.links.email %}
-				<li><a href="mailto:{{ site.links.email }}">Contact Me</a></li>
-			{% endif %}
-		</ul>
-	</div>
-</div>
+<section class="sidebar">
+  <a href="/" aria-label="Avatar">
+    <img src="{{ site.github.owner_gravatar_url }}?s=150" height="75" width="75" class="avatar" />
+  </a>
+
+  <section class="name">
+    <a href="/">
+      <span id="fname">{{ site.name|split:' '|first }}</span>
+      <span id="lname">{{ site.name|split:' '|last }}</span>
+    </a>
+  </section>
+
+  <section class="meta">
+    <a href="{{ site.github.owner_url }}" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><i class="fa fa-github"></i></a>
+    <a href="https://twitter.com/{{ site.twitter }}" target="_blank" title="Follow me on Twitter" aria-label="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
+    <a href="/atom.xml" title="Atom RSS feed" aria-label="Atom RSS feed"><i class="fa fa-rss"></i></a>
+  </section>
+
+  <section class="sections">
+    <ul>
+      <li><a href="/about.html">about</a></li>
+      <li><a href="/">posts</a></li>
+    </ul>
+  </section>
+</section>

@@ -1,75 +1,60 @@
-# Bitwiser Jekyll theme.
-A minimalist Jekyll theme that puts focus on content.
+# Left
 
-### For subdirectory blog support, checkout [subdirectory](https://github.com/brijeshb42/bitwiser/tree/subdirectory) branch.
+Left is a clean, whitespace-happy layout for [Jekyll](https://github.com/mojombo/jekyll).
 
-## Features
+This is designed to be an easy layout to modify for your own blog. It was
+extracted from [zachholman.com](http://zachholman.com/), which means it was
+battle-hardened from years of posting serious blog posts about emoji and swear
+words.
 
-* Clean, simple and responsive layout
-* Code formatting.
-* Sitemap included.
-* Google analytics.
-* Disqus commenting (Loaded lazily).
-* Share post to facebook and twitter.
-* Robots.txt included.
-* Custom 404 error page.
-* Clean material like layout.
-* Awesome navigation menu on small screens.
+You can see it live right here: <http://zachholman.com/left/>
 
-Theme website: http://bitwiser.in/bitwiser/
+![Left](http://cl.ly/image/3S2r1p2C0E2B/content)
 
-Demo post: http://bitwiser.in/bitwiser/demo.html
+## Installation
 
-Usage: [http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html)
+- [Fork this repository](https://github.com/holman/left/fork)
+- Clone it: `git clone https://github.com/YOUR-USER/left`
+- Install ruby things: `bundle install` (if this doesn't work, look into [installing Bundler](http://bundler.io))
+- Start it up: `script/server`
 
-Download latest Zip: [Here](http://goo.gl/iC85jv)
+You should have a server up and running locally at <http://localhost:4000>.
 
-Or browse releases: [Releases](https://github.com/brijeshb42/bitwiser/releases)
+## Customization
 
-To get started with this theme, read the [usage guide](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html). After that start creating post files in the ```_posts``` directory and push your changes to github.
+Next you'll want to change a few things. Most of them can be changed directly in
+[_config.yml](https://github.com/holman/left/blob/gh-pages/_config.yml). That's
+where we'll pull your name, Twitter username, and things like that.
 
-Report issues: [Issues](https://github.com/brijeshb42/bitwiser/issues/new)
+There's a few other places that you'll want to change, too:
 
-If you are using this theme, do not forget to :star: this repo or tweet [@brijeshb42](https://twitter.com/brijeshb42).
+- [CNAME](https://github.com/holman/left/blob/gh-pages/CNAME): If you're using
+  this on GitHub Pages with a custom domain name, you'll want to change this
+  to be the domain you're going to use. All that should be in here is a
+  domain name on the first line and nothing else (like: `example.com`).
+- [favicon.ico](https://github.com/holman/left/blob/gh-pages/favicon.ico): This
+  is a smaller version of my gravatar for use as the icon in your browser's
+  address bar. You should change it to whatever you'd like.
+- [apple-touch-icon.png](https://github.com/holman/left/blob/gh-pages/apple-touch-icon.png):
+  Again, this is my gravatar, and it shows up in iOS and various other apps
+  that use this file as an "icon" for your site.
 
-Pull requests are also welcome :thumbsup:.
+## Deployment
 
+Left is designed to be deployed to [GitHub Pages](http://pages.github.com). It
+uses [repository metadata](https://help.github.com/articles/repository-metadata-on-github-pages)
+to generate some of your content, like your GitHub URL and avatar information (so you
+might not actually see it locally until you push it up to Pages).
 
-## Getting Started
+All you should have to do is rename your repository on GitHub to be
+`username.github.com`. Since everything is on the `gh-pages` branch, you
+should be able to see your new site at <http://username.github.io>.
 
-(Assuming you know what Jekyll and Github pages are.)
+## Licensing
 
-* Download this theme's zip file from [here](http://goo.gl/iC85jv) or clone the repository using ```git clone https://github.com/brijeshb42/bitwiser.git```. If you are cloning, then make sure to delete the ```gh-pages``` branch as it includes the files for the theme website.
+This is [MIT](https://github.com/holman/left/blob/gh-pages/LICENSE) with no
+added caveats, so feel free to use this on your site without linking back to
+me or using a disclaimer or anything silly like that.
 
-* Install ```ruby``` and then do ```gem install jekyll```. This theme uses the latest ```jekyll``` version. So if you already have it installed, then upgrade it.
-
-* ```_config.yml``` describes all the variables which you are required to set. The description begins with double hash(```##```). And the value to be set is commented below it using ```#```.
-
-* Edit ```_config.yml``` according to your requirements.
-	* ```name``` : ```Your website name```
-	* ```disqus``` : ```disqusForumName```
-		If this value is present, disqus commenting will be automatically added to all your blog posts.
-	* ```ga_id``` : ```googleAnalyticsID```
-		If this value is present, google analytics will be added to your website/blog.
-		If ```ga_id``` is present, make sure that ```ga_domain``` is also present.
-	* ```description```: ```A short description of your website to be included in meta tag of your homepage```
-	* ```keywords``` : ```a few frequently used keywords on your site```
-	* ```links``` : This variable has a few commonly used social networks' links
-		* ```facebook```: ```facebookId```
-		* ```twitter``` : ```twitterHandle```
-		* ```email```: ```email@example.com```
-		* ```github```: ```githubUsername```
-	* ```about_image```: This is a new variable introduced. If defined, make sure the image is present in ```img``` directory. If not defined, a provided placeholder image is used. ** If github link is provided in ```links``` variable, then the github profile picture will be used if ```about_image``` is not defined.
-	* ```sidebar```: This is a new variable introduced. It is used to enable/disable sidebar. If present, a sidebar will be displayed. To disable sidebar, just comment this line using ```#```.
-
-* After setting the values in ```_config.yml```, you can start adding posts in the ```_posts``` directory. Remove the example posts from the directory. The name of files in this directory should be according to specifications by ```jekyll```, i.e, ```YYYY-MM-DD-your-post-title.md```. **Note** that the file name extenion can be anything from md, markdown, mkd, textile or html.
-
-* Replace the image files ```favicon.png``` and ```sharer.png``` with images of your own.
-
-* Test the site on local machine using ```jekyll serve``` in the theme directory.
-
-* If all works well, ```git push``` your changes to your github pages repository ```https://github.com/githubUserName/githubUserName.github.io```
-
-* Then visit your blog at [http://githubUserName.github.io](http://githubUserName.github.io).
-
-* If you want to use a custom domain, then edit the ```CNAME``` file and add your own domain ```example.com```. Make sure your domain points to github ip address.
+If you'd like give me credit somewhere on your blog or tweet a shout out to
+[@holman](https://twitter.com/holman), well hey, I'll take it.

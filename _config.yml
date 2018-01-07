@@ -26,9 +26,9 @@ keywords: some, relevant, keywords, for, usage, in metatags
 
 ##Some commonly used links
 links:
-  facebook: https://www.facebook.com/jihyun.choi.5891
+  facebook: jihyun.choi.5891
   email: isaccchoi5@gmail.com
-  github: https://github.com/isaccchoi
+  github: isaccchoi
 
 ##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
 about_image: placeholder.jpg

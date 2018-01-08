@@ -1,3 +1,13 @@
+---
+layout: posten
+title: "Docker Practice"
+date: 2017-10-07 10:08:00 +0800
+lang: en
+nav: post
+category: Programing
+tags: [Docker, ]
+---
+
 # Docker
 
 [참고사이트](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
@@ -13,13 +23,13 @@ MAINTAINER	isaccchoi@naver.com
 RUN				apt-get update
 ```
 - FROM: 사용할 OS
-- MAINTAINER: 소유자의 이메일 주소 
+- MAINTAINER: 소유자의 이메일 주소
 - RUN: 실행할 용어
 
 ```docker
 >>> docker build -t base . -f Dockerfile.base .
 ```
-Dockerfile.base파일을 이용하여 도커 이미지 생성 
+Dockerfile.base파일을 이용하여 도커 이미지 생성
 
 ```
 >>> docker build -t eb -t Dockerfile
@@ -33,5 +43,4 @@ Dockerfile.base파일을 이용하여 도커 이미지 생성
 ```
 >>> docker run --rm -it eb /bin/zsh
 ```
-이미지 생성 완료후 zsh을 이용해 생성된 이미지로 도커 실행 
-
+이미지 생성 완료후 zsh을 이용해 생성된 이미지로 도커 실행

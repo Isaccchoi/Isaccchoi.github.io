@@ -1,3 +1,13 @@
+---
+layout: posten
+title: "SQL Tutorial"
+date: 2017-10-07 10:08:00 +0800
+lang: en
+nav: post
+category: Programing
+tags: [SQL, ]
+---
+
 # SQL Tutorial
 
 > https://www.w3schools.com/sql/default.asp
@@ -22,7 +32,7 @@ CustomerID | CustomerName| ContactName| Address | City|PostalCode|Country
 - **DELETE** - 데이터 베이스에서 데이터를 삭제
 - **INSERT INTO** - 데이터 베이스에 데이터를 삽입
 - **CREATE DATABASE** - 새로운 데이터 베이스를 새성
-- **ALTER DATABASE** - 데이터베이스를 수정 
+- **ALTER DATABASE** - 데이터베이스를 수정
 - **CREATE TABLE** - 새로운 테이블 생성
 - **ALTER TABLE** - 테이블 수정
 - **DROP TABLE** - 테이블 제거
@@ -73,7 +83,7 @@ WHERE Country='Mexico';
 
 ## SQL AND, OR and NOT 문법
 
-- **AND** - 조건을 모두 만족할 경우에 추출 
+- **AND** - 조건을 모두 만족할 경우에 추출
 - **OR** - 조건중 한가지를 만족할 경우에 추출
 - **NOT** - 조건이 아닌 경우만 추출
 
@@ -92,10 +102,10 @@ WHERE codition1 OR condition2 OR ...;
 ```SQL
 SELECT column1, column2, ...
 FROM table_name
-WHERE NOT condition; 
+WHERE NOT condition;
 ```
 
-## ORDER BY 
+## ORDER BY
 정렬을 해주는 문법
 
 - DESC - 역순
@@ -109,13 +119,13 @@ ORDER BY column1, column2, .... ASC|DESC;
 
 ## INSER INTO
 데이터 삽입
-맨 마지막에 데이터가 삽입 된다. 
+맨 마지막에 데이터가 삽입 된다.
 ```SQL
 INSERT INTO Customers
 VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
 ```
 ## NULL
-Where문을 통해 NULL 값을 찾을 수도 있으며 삽입시 넣을수도 있음 
+Where문을 통해 NULL 값을 찾을 수도 있으며 삽입시 넣을수도 있음
 
 ## UPDATE
 기존 데이터 변경 문법
@@ -126,5 +136,3 @@ SET ContactName = 'Alfred Schmidt', City = 'Frankfurt'
 WHERE CustomerID = 1;
 ```
 <small style='color: gray;'>CustomerID 가 1번인 값을 찾아 ContactName과 City를 변경</small>
-
-

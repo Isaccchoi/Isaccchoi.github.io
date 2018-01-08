@@ -1,7 +1,17 @@
+---
+layout: posten
+title: "PostgreSQL"
+date: 2017-10-12 10:08:00 +0800
+lang: en
+nav: post
+category: Programing
+tags: [SQL, ]
+---
+
 # PostgreSQL
 
 ```
->>> brew install postgresql 
+>>> brew install postgresql
 ```
 브루를 이용해 postgresql 설치
 
@@ -13,7 +23,7 @@
 ```
 >>> createdb <db 이름> --owner=<user 이름>
 ```
-DB를 생성하며 해당 DB의 소유자를 지정 
+DB를 생성하며 해당 DB의 소유자를 지정
 
 
 ```
@@ -34,11 +44,11 @@ DATABASES = {
     }
 }
 ```
-settings.py에 다음과 같은 형식으로 작성을 합니다. 
+settings.py에 다음과 같은 형식으로 작성을 합니다.
 
 
  - 로컬에서 사용시 HOST에는 localhost를 입력합니다.
- - Password에 User password를 입력하고 없을 경우 공백으로 놓습니다. 
+ - Password에 User password를 입력하고 없을 경우 공백으로 놓습니다.
 
 ```
 >>> python manage.py migrate
@@ -49,5 +59,3 @@ settings.py에 다음과 같은 형식으로 작성을 합니다.
 >>> python manage.py loaddata dump.json
 ```
 dump.json에서 데이터를 로드해서 새로운 DB에 불러 옵니다.
-
-

@@ -1,6 +1,15 @@
+---
+layout: posten
+title: "Python Tutoral 1"
+date: 2017-09-12 12:08:00 +0800
+lang: en
+nav: post
+category: Programing
+tags: [Python, ]
+---
 
 pluginslugins=({ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting)
-n버전**을 관리하기 위해 사용 함 
+n버전**을 관리하기 위해 사용 함
 
 
 방향키 관련 이슈가 일어날 수 있기 때문에 하기 명령어로 readline 및 xz를 설치 한다
@@ -15,7 +24,7 @@ pyenv global [python version]
 
 ---
 
-### virtualenv 
+### virtualenv
 프로젝트별로 Python **개발환경** *(python 패키지 설치 환경)*을 관리하기 위해 사용 함
 
 
@@ -25,13 +34,13 @@ pyenv global [python version]
 ### pyenv-virtualenv
 pyenv 제작자가 pyenv 사용시 virtualenv 사용이 편리하도록 만듬
 
-pyenv에서 python 버전 다운로드 이후 
+pyenv에서 python 버전 다운로드 이후
 ```
 pyenv virtualenv [python version] [virtualenv name]
 ```
 을 입력 하여 새로운 virtualenv를 만든다
 
-그다음 작업하길 원하는 디렉토리에 들어가 ```pyenv local [virtualenv name] ```을 입력하여 해당 디렉토리에서 pyenv-virtualenv를 적용한다 
+그다음 작업하길 원하는 디렉토리에 들어가 ```pyenv local [virtualenv name] ```을 입력하여 해당 디렉토리에서 pyenv-virtualenv를 적용한다
 
 
 ---
@@ -40,7 +49,7 @@ pyenv virtualenv [python version] [virtualenv name]
 ### 용어
 --
 #### 리터럴
-변하지 않는 고정된 데이터 
+변하지 않는 고정된 데이터
 
 
 1. 정수형
@@ -63,7 +72,7 @@ sec=60
 ```
 >>> for char in '안녕하세요':
 ...   print(char)
-... 
+...
 ```
 
 ### 변수
@@ -84,7 +93,7 @@ type 함수 사용  ```type(var1)```
 #### 변수의 이름 제한
 예약어 사용불가,숫자로 시작 불가, 대문자로 시작은 가능하나 대문자로 쓰지 않음, 언더스코어(_) - 언더스코어는 특별한 처리방법을 따르므로 일반적으로 사용하지 않는다
 
-#### 변수의 입출력 
+#### 변수의 입출력
 input, print 함수 사용
 ```
 input()
@@ -96,7 +105,7 @@ print()
 --
 연산자|설명|예|결과
 ---|---|---|---|
-\+  | 더하기        | 32 + 7    | 39 
+\+  | 더하기        | 32 + 7    | 39
 \-  | 빼기      | 82 - 2    | 80
 \*  | 곱하기        | 3 * 7 | 21
 /   | 나누기        | 7 / 2 | 3.5

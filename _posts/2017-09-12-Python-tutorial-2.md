@@ -1,3 +1,13 @@
+---
+layout: posten
+title: "Python tutorial -2"
+date: 2017-09-12 10:08:00 +0800
+lang: en
+nav: post
+category: Programing
+tags: [Python, ]
+---
+
 ### 문자열
 --
 
@@ -14,7 +24,7 @@ Python3에서는 기본이 Unicode 사용
 
 
 ```
-긴문자열 입력시 ''' 
+긴문자열 입력시 '''
 기이이인
 문자열
 '''으로 묶는다
@@ -66,7 +76,7 @@ String의 내장함수 split을 사용하여 비워놓을 경우 공백을 기�
 ```
 "넣을문자열".join(넣을 리스트)
 ```
-join함수를 이용해 문자를 넣을 수 있음 
+join함수를 이용해 문자를 넣을 수 있음
 
 ### 공식문서
 [Text Sequence - String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)

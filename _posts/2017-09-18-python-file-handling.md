@@ -1,8 +1,18 @@
+---
+layout: posten
+title: "Python File Handling"
+date: 2017-09-18 10:08:00 +0800
+lang: en
+nav: post
+category: Programing
+tags: [Python, ]
+---
+
 # 파일 다루기
 ```python
 변수 = open(파일명, 모드)
 ```
-#### 모드의 첫 번째 글자 
+#### 모드의 첫 번째 글자
 모드|설명
 ---|---
 r|읽기
@@ -17,6 +27,3 @@ a|추가 (파일이 존재할 경우 파일의 끝부터 쓴다)
 ---|---
 t 또는 없음|텍스트타입
 b|이진데이터 타입
-
-
-

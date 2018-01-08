@@ -1,19 +1,19 @@
 # Resources settings
 source:      .
 layouts:     ./_layouts
-timezone:    Asia/Hongkong
+timezone:    Asia/Seoul
 
 # Site settings
-email: 1540294142@qq.com
-author: Joytou Wu
-owner_name: Joytou Wu
-github_username: joytou
-repo: JOYTOU
+email: isaccchoi5@gmail.com
+author: JiHyun Choi
+owner_name: JiHyun Choi
+github_username: isaccchoi
+repo: JiHyun Choi
 
 #Server
-url: http://joytou.nets.hk
-github: https://github.com/joytou/
-coding: https://coding.net/joytou/
+url: isaccchoi.github.io
+github: https://github.com/isaccchoi/
+# coding: https://coding.net/joytou/
 baseurl: ""
 
 #Page settings
@@ -42,7 +42,7 @@ keywords:
         - "博客"
         - "个人博客"
         - "博客模板"
-        
+
 #Update configuration
 versioncode: 1
         #The current versioncode.
@@ -51,20 +51,20 @@ versionname: "1.0.1"
 #remind: true
         #Whether to remind you to upgrade the latest version when there is the latest version.
 
-#Others
-#Baidu
-BaiduSiteVerification: "eb6Z6IT34b"
-#Sogou
-SogouSiteVerification: "xhqLIE4SUI"
-#360
-360SiteVerification: "24cc2fe4596dc5c6885b587f8db09733"
-#51La
-51la: "19258191"
-51lamb: "1"
-
-coding_comments:
-  owner: 'joytou'
-  repo: 'JOYTOU'
-  oauth:
-    client_id: '624713aab28c44e0555b0e8d5d18dece'
-    client_secret: '5d2d45460648bfbd3b9f77bead1a0ac6aa7c3c95'
+# #Others
+# #Baidu
+# BaiduSiteVerification: "eb6Z6IT34b"
+# #Sogou
+# SogouSiteVerification: "xhqLIE4SUI"
+# #360
+# 360SiteVerification: "24cc2fe4596dc5c6885b587f8db09733"
+# #51La
+# 51la: "19258191"
+# 51lamb: "1"
+#
+# coding_comments:
+#   owner: 'joytou'
+#   repo: 'JOYTOU'
+#   oauth:
+#     client_id: '624713aab28c44e0555b0e8d5d18dece'
+#     client_secret: '5d2d45460648bfbd3b9f77bead1a0ac6aa7c3c95'

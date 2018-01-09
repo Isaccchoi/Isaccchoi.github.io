@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "Python Exceptions"
 date: 2017-09-18 10:08:00 +0800
 lang: en

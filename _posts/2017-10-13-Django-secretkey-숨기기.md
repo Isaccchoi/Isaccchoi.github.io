@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "Django Secret Key Hiding"
 date: 2017-10-07 10:08:00 +0800
 lang: en

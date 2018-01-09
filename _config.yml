@@ -1,12 +1,12 @@
 # Site wide configuration
 
-title: Micronaut Modified So Simple Theme
+title: Isaccchoi Development Blog
 locale: en_US
 timezone: CET
-description: Theme based on So Simple Theme
-logo: site-logo.svg
+description: Development Blog
+logo: site-logo.png
 search: true
-url: #your-site-url
+url: isaccchoi.github.io
 external_data_url: # common url for images and other external data
 
 # Jekyll configuration
@@ -44,13 +44,13 @@ paginate_path: /posts/page:num
 
 # Site owner
 owner:
-  name: Site Name
+  name: Isaccchoi Development Blog
   avatar: site-logo.png
-  email: #youremail
+  email: isaccchoi5@gmail.com
   disqus-shortname: #your-disqus-shortname
   twitter: #your-twitter-name
-  facebook: #username
-  github: #your-github-name
+  facebook: jihyun.choi.5891
+  github: isaccchoi
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram:

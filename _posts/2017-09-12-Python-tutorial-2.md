@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "Python tutorial -2"
 date: 2017-09-12 10:08:00 +0800
 lang: en

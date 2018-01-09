@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "SQL Tutorial"
 date: 2017-10-07 10:08:00 +0800
 lang: en

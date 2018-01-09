@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "PostgreSQL"
 date: 2017-10-12 10:08:00 +0800
 lang: en

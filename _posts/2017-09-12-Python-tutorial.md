@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "Python Tutoral 1"
 date: 2017-09-12 12:08:00 +0800
 lang: en

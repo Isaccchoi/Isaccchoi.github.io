@@ -1,5 +1,5 @@
 ---
-layout: posten
+layout: post
 title: "Model Inhertance"
 date: 2017-10-11 10:08:00 +0800
 lang: en

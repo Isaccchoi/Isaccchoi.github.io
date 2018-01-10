@@ -1,13 +1,3 @@
----
-layout: post
-title: "S3를 이용한 정적사이트 웹 호스팅"
-date: 2018-01-09 17:12:00
-lang: en
-nav: post
-category: Programing
-tags: [AWS, S3, Deploy]
----
-
 # S3를 이용한 Static Website hosting
 
 ## Bucket 생성

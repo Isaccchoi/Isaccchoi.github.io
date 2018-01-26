@@ -8,3 +8,4 @@ gem "jekyll-redirect-from"
 gem "jekyll-paginate"
 gem "tzinfo-data"
 gem "jemoji"
+gem "nokogiri", '>=1.8.1'

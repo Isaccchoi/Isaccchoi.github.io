@@ -8,36 +8,41 @@ category: Programing
 tags: [Django, Boostrap, pip]
 ---
 
-# django-bootstrap-pagination
+# django bootstrap pagination package
 
 ## 사용법
 [django-bootstrap-pagination](https://github.com/jmcclell/django-bootstrap-pagination)
 
+`if 문을 사용해서 복잡하게 사용해야했던 Pagination 기능을 한줄로 간단하게 처리할 수 있게 해줌`
+
  - 기본 
 
-	```
+	```python
 	{% bootstrap_paginate page_obj %}
 	```
+	
 	한줄만 적으면 끝
 
 - range: 밑에 버튼으로 몇개를 표시해줄건지 범위를 정할 수 있음
 
-	```
+	```python
 	{% bootstrap_paginate page_obj range=숫자 %}
 	```
 	
 - show\_prev\_next: 이전 버튼, 다음버튼 표시 여부
 
-	```
+	```python
 	{% bootstrap_paginate page_obj show_prev_next="불리언" %}
 	```
+	
 - show\_first\_last: 처음과 마지막 버튼 표시 여부 
 
-	```
+	```python
 	{% bootstrap_paginate page_obj show_first_last="불리언" %}
 	```
 	
-- 각종 파라미터 및 앵커 등등 추가 가능
+- 각종 파라미터 및 url변경 기능을 추가할 수 있어 편함 
+
 
 
 ### Django 1.10+ 버전의 호환성 오류 확인 
@@ -48,6 +53,23 @@ django 1.10이후 `django.core.urlresolvers`가 `django.urls`로 변경됨
 
 import 부분 해결 후 사용시 정상작동
 
-<s>contibutor 해보려고 했으나 이미 누군가 12월에 같은 코드로 pull requests 날렸던건 안비밀</s>
+**기존코드**
 
-package가 잘 관리는 안되고 있으나 편함 
+```python
+# bootstrap_pagination.py
+
+from django.core.urlresolvers import reverse, NoReverseMatch
+```
+
+**변경코드**
+
+```python
+try:
+	from django.core.urlresolvers import reverse, NoReverseMatch
+except ImportError:
+	from django.urls import reverse, NoReverseMatch
+```
+
+<s>contibute 해보려고 했으나 이미 누군가 12월에 같은 코드로 pull requests 날렸던건 안비밀</s>
+
+package가 잘 관리는 안되고 있으나 편하고 좋습니다.

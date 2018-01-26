@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "모내기 발표"
+title: "Bootstrap-datepicker"
 date: 2018-01-05 10:08:00 +0800
 lang: en
 nav: post
 category: 모내기
-tags: [Package, ]
+tags: [Python Package, Bootstrap, ]
 ---
 
-# 모내기 발표 <span style="font-size: 13px;">2018-01-05</span>
-
-## bootstrap-datepicker
+# Bootstrap DatePicker
 
 
 ```javascript

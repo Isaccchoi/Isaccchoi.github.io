@@ -1,8 +1,28 @@
 /*! Plugin options and other jQuery stuff */
 
+// dl-menu options
+$(function() {
+  $( '#dl-menu' ).dlmenu({
+    animationClasses : { classin : 'dl-animate-in', classout : 'dl-animate-out' }
+  });
+});
+
 // FitVids options
 $(function() {
-	$("article").fitVids({ customSelector: "iframe[src^='http://bandcamp.com'], iframe[src^='http://soundcloud.com.com']"});
+  $("article").fitVids();
+});
+
+$(".close-menu").click(function () {
+  $(".menu").toggleClass("disabled");
+  $(".links").toggleClass("enabled");
+});
+
+$(".about").click(function () {
+  $("#about").css('display','block');
+});
+
+$(".close-about").click(function () {
+  $("#about").css('display','');
 });
 
 // Add lightbox class to all image links
@@ -16,24 +36,14 @@ $(document).ready(function() {
     gallery: {
       enabled: true,
       navigateByImgClick: true,
-      tCounter: '<span class="mfp-counter">%curr% of %total%</span>', // markup of counter
-      preload: [1,1] // Will preload 0 - before current, and 1 after the current image
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
     },
     image: {
-      titleSrc: function(item) {
-          return '<p>' + item.el.parent().find('figcaption').text() + '</p>';
-      },
       tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
     },
-    removalDelay: 200, // Delay in milliseconds before popup is removed
+    removalDelay: 300, // Delay in milliseconds before popup is removed
     // Class that is added to body when popup is open. 
     // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-with-zoom',
-	zoom: {
-        enabled: true, // By default it's false, so don't forget to enable it
-        duration: 300, // duration of the effect, in milliseconds
-        easing: 'ease-in-out' // CSS transition easing function
-    }
-	
+    mainClass: 'mfp-fade'
   });
 });

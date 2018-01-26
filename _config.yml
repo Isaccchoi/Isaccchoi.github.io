@@ -10,7 +10,7 @@ url: blog.isaccchoi.com
 # Owner/author information
 owner:
   name:           최지현
-  avatar:         avatar.jpg
+  avatar:         /images/avatar.jpg
   bio:            "Python과 Django를 좋아하는 개발자의 개발 블로그"
   email:          isaccchoi5@gmail.com
   # Social networking links used in footer. Update and remove as you like.

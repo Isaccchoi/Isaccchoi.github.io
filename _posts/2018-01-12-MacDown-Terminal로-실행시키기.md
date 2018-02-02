@@ -8,9 +8,9 @@ category: Programing
 tags: [Markdown, MacDown]
 ---
 
-# MacDown Terminal로 특정 파일 실행시키기 
+# MacDown Terminal로 특정 파일 실행시키기
 
-## Bash Command 추가 
+## Bash Command 추가
 
 자기 bash환경에 맞춰서 엽니다.
 

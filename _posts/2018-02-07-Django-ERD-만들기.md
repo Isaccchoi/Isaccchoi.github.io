@@ -42,6 +42,8 @@ GRAPH_MODELS = {
 ```$ ./manage.py graph_models -a > my_project.dot```
 
 ![dotfile](/images/erd/dot.png)
+
+
 위와 같이 기본적으로 볼 수는 있으나 보기가 편하지는 않습니다.
 조금 더 이쁘게 보기 위해 graphviz 설치가 필요합니다. 
 
@@ -49,7 +51,7 @@ GRAPH_MODELS = {
 
 공식문서에는 ```$ pip install pygraphviz```를 하면 된다고 나와 있으나 그냥 설치를 하게 되면 오류가 발생을 합니다.
 
-로컬에 graphviz설치가 선행이 되어야합니다.
+brew를 통한 graphviz설치가 선행이 되어야합니다.
 
 ```$ brew install graphviz```
 

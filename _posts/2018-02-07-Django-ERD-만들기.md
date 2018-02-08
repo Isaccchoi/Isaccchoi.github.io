@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "Django-extensions를 이용한 ERD 만들기"
-date: 2018-02-08 13:29:00
-lang: ko
+title: "Django-extensions를 이용한 ERD만들기"
+date: 2018-02-07 23:20:00
+lang: en
 nav: post
 category: Programing
 tags: [Python, Django, Python Package, ERD]
 ---
 
-# Django-extensions를 이용한 ERD만들기
+## Django-extensions를 이용한 ERD만들기
 
-[django-extentions graph 공식 문서](http://django-extensions.readthedocs.io/en/latest/graph_models.html)
+[django-extentions graph_model 공식 문서](http://django-extensions.readthedocs.io/en/latest/graph_models.html)
 
-## Django-extensions 설치 
+## Django extensions 설치 
 pip를 이용해 django-extions를 설치합니다.<br>
-`$ pip install django-extionsions`
+```$ pip install django-extionsions```
 
-settins.py의 INSTALLED\_APPS에 django\_extensions를 넣어줍니다. 
+settins.py의 INSTALLED\_APPS에 `django_extensions`를 넣어줍니다. 
 
 ```python
 # settions.py
@@ -39,23 +39,23 @@ GRAPH_MODELS = {
 
 기본적으로 Django-extensions에 있는 graph model기능을 이용해 dot파일을 생성할 수 있습니다.
 
-`$ ./manage.py graph_models -a > my_project.dot`
+```$ ./manage.py graph_models -a > my_project.dot```
 
-![dot file](/images/erd/dot.png)
+![dotfile](/images/erd/dot.png)
 위와 같이 기본적으로 볼 수는 있으나 보기가 편하지는 않습니다.
 조금 더 이쁘게 보기 위해 graphviz 설치가 필요합니다. 
 
 ## graphviz
 
-공식문서에는 `$ pip install pygraphviz`를 하면 된다고 나와 있으나 그냥 설치를 하게 되면 오류가 발생을 합니다.
+공식문서에는 ```$ pip install pygraphviz```를 하면 된다고 나와 있으나 그냥 설치를 하게 되면 오류가 발생을 합니다.
 
 로컬에 graphviz설치가 선행이 되어야합니다.
 
 ```$ brew install graphviz```
 
-설치가 완료된 후 `$ pip install pygraphviz`
+설치가 완료된 후 ```$ pip install pygraphviz```
 
-`$ /manage.py graph_models -a -g -o my_project_visualized.png`
+```$ /manage.py graph_models -a -g -o my_project_visualized.png```
 
 ![graphviz](/images/erd/graphviz.png)
 
@@ -67,6 +67,6 @@ GRAPH_MODELS = {
 
 원하는 모델만 출력을 하도록 변경을 해봅니다.
 
-`$ ./manage.py graph_models -a -I User,Center,WorkOutRecord -o my_project_want_model.png`
+```$ ./manage.py graph_models -a -I User,Center,WorkOutRecord -o my_project_want_model.png```
 
-![just want model](/images/erd/my_project_include.png)
+![justwantmodel](/images/erd/my_project_include.png)

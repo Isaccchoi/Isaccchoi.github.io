@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Django Custom Template Tag를 이용한 Dynamic navbar 만들기"
-date: 2018-02-13 15:20:00
+date: 2018-02-15 10:20:00
 lang: en
 nav: post
 category: Programing
@@ -13,9 +13,11 @@ tags: [Python, Django]
 navbar에 카테고리 필터항목을 집어넣고 싶은데 카테고리가 변경될때 마다 html작업을 하는게 <s>매우 귀찮아서</s> 실사용자가 하기 어려운 작업이기 때문에
 자동으로 로드되는 카테고리 리스트가 필요했다.
 
-기본적인 방법으로는 모든 view에 해당 queryset을 전달하여 처리하도록 할 수는 있으나 매우 비효율적이라고 느껴져 편하게 작업할 수 있는 번뜩이는 무언가가 필요해 작업을 하게되었다.
+기본적인 방법으로는 모든 view에 해당 queryset을 전달하여 처리하도록 할 수는 있으나 <s>이것 또한 매우 귀찮아서</s> 매우 비효율적이라고 느껴져 편하게 작업할 수 있는 번뜩이는 무언가가 필요해 작업을 하게되었다.
 
-해당 내용을 알기전 어렵게 ajax요청으로 데이터를 받아와 jquery를 이용해 template을 재구성 하여 보내는 60줄이 넘는 코드에서 20줄이 내외정도 되는 코드로 해결을 할 수 있게 되었다.
+해당 내용을 알기전 어렵게 ajax요청으로 데이터를 받아와 jquery를 이용해 html tag를 구성 하여 기존 html에 append시키는 60줄이 넘는 코드에서 20줄이 내외정도 되는 코드로 해결을 할 수 있게 되었다.
+
+또한 브라우저의 오류인지 재구성하여 만든 html태그가 이상없이 작성했음에도 불구하고 OnMouseOver옵션이 됐다가 안됐다가 하는 이상한 버그도 해결할 수 있었다. <small>(이것때문에 4시간을 넘게 고생했다 왜 진작 공부하지 않았고 찾아보지 않았는지 후회중이다)</small>
 
 [custom template tag 공식문서](https://docs.djangoproject.com/en/2.0/howto/custom-template-tags/)
 

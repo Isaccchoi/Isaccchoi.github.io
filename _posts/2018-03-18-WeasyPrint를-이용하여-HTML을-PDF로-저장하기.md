@@ -44,7 +44,7 @@ def html_to_pdf_view(request, pk):
 
 ```
 
-
+{% raw %}
 ```python
 # utils/advice_pdf.html
 
@@ -94,7 +94,7 @@ def html_to_pdf_view(request, pk):
 </html>
 
 ```
-
+{% endraw %}
 
 ## 결과물 
 

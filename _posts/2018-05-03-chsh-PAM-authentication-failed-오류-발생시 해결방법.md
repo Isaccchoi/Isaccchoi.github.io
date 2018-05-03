@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "chsh PAM authentication failed 오류시 해결 방법"
-date: 2018-05-03 10:20:00
+date: 2018-05-02 10:20:00
 lang: ko
 nav: post
 category: Programing

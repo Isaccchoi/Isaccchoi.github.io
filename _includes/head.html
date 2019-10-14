@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="google-site-verification" content="8qa-1i6RFX5cmPxVd556474_ZRAesyPYzSPuni2ER7w" />
+{% include analytics.html %}
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
@@ -62,4 +63,3 @@
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}
 <style type="text/css">body {background-image:url({{ background }});}</style>
 {% endif %}
-{% include analytics.html %}

@@ -1,9 +1,16 @@
 <meta charset="utf-8">
 <meta name="google-site-verification" content="8qa-1i6RFX5cmPxVd556474_ZRAesyPYzSPuni2ER7w" />
-{% include analytics.html %}
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149867313-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149867313-1');
+</script>
 
 {% if site.owner.twitter %}<!-- Twitter Cards -->
 {% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
